@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --electric-yellow: #FFD229;
+  --deep-navy: #1B1F3B;
+  --vibrant-red: #E04141;
+  --comic-border: 4px;
+}
+
+body {
+  margin: 0;
+  font-family: "Bangers", "Comic Sans MS", cursive, sans-serif;
+  background: var(--deep-navy);
+  color: white;
+}
+
+/* Comic Book Typography */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Comic Panel Borders */
+.comic-panel {
+  border: var(--comic-border) solid black;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.comic-panel::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid white;
+  pointer-events: none;
+}
+
+/* Speech Bubble */
+.speech-bubble {
+  position: relative;
+  background: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  color: black;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: black;
+  border-bottom: 0;
+  margin-left: -10px;
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  margin-left: -10px;
+  z-index: 1;
+}
+
+/* Badge Style */
+.hero-badge {
+  background: var(--electric-yellow);
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--deep-navy);
+  font-weight: 900;
+}
+
+/* Halftone Effect */
+.halftone-bg {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
