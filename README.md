@@ -1,11 +1,10 @@
+# My Hero Academia Fandom Hub
 
-  # My Hero Academia Fandom Hub
+This will be used to create a github page for my anime project. Template of this code is from figma.
 
-  This is a code bundle for My Hero Academia Fandom Hub. The original project is available at https://www.figma.com/design/BRqklV9aip8dCvI3K6J0uC/My-Hero-Academia-Fandom-Hub.
+## Running the code
 
-  ## Running the code
+Run `npm i` to install the dependencies.
 
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
+Run `npm run dev` to start the development server.
   
