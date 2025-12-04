@@ -7,4 +7,3 @@ This will be used to create a github page for my anime project. Template of this
 Run `npm i` to install the dependencies.
 
 Run `npm run dev` to start the development server.
-  

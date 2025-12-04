@@ -4,7 +4,7 @@
   import path from 'path';
 
 export default defineConfig({
-  base: '/',  // Change this to '/<repo-name>/' if deploying to GitHub Pages
+  base: '/MyHeroAcademiaAnimeProject/',
   plugins: [react()],
   resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
